@@ -6,10 +6,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+    { icon: Github, href: 'https://github.com/Praiseogooluwa', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/praise-ogooluwa', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:alex@example.com', label: 'Email' },
+    { icon: Mail, href: 'mailto:praiseogooluwa118@gmail.com', label: 'Email' },
   ];
 
   const quickLinks = [
@@ -43,7 +43,7 @@ const Footer = () => {
                 <Database className="h-6 w-6 text-green-400" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Alex Johnson
+               Isaiah Ogooluwa Bakare
               </span>
             </div>
             
@@ -121,13 +121,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Get In Touch</h3>
             <div className="space-y-3">
               <p className="text-gray-400">
-                📧 alex@example.com
+                📧 praiseogooluwa118@gmail.com
               </p>
               <p className="text-gray-400">
-                📱 +1 (555) 123-4567
+                📱 +234 (0) 704-811-6542
               </p>
               <p className="text-gray-400">
-                📍 San Francisco, CA
+                📍 Lagos, Nigeria
               </p>
             </div>
             
@@ -156,7 +156,7 @@ const Footer = () => {
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-gray-400">
-              <span>© {currentYear} Alex Johnson. Built with</span>
+              <span>© {currentYear} Praise Ogooluwa. Built with</span>
               <Heart className="h-4 w-4 text-red-500" />
               <span>and React + TypeScript</span>
             </div>

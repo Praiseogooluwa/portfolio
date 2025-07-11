@@ -12,38 +12,38 @@ const Certifications = () => {
   const certifications = [
     {
       id: 1,
-      title: 'Professional Machine Learning Engineer',
-      issuer: 'Google Cloud',
-      date: '2023',
-      credentialId: 'GCP-ML-2023-001',
-      logo: '🏆',
+      title: 'Data Science Bootcamp',
+      issuer: 'GOMYCODE',
+      date: '2024',
+      credentialId: 'GCP-ML-2024',
+      image: '/public/GMC.png',
       color: 'from-blue-500 to-blue-600',
-      description: 'Advanced ML engineering practices on Google Cloud Platform',
-      skills: ['MLOps', 'TensorFlow', 'Vertex AI', 'Cloud ML'],
+      description: 'Completion of the GOMYCODE Data Science Bootcamp Course',
+      skills: ['SQL', 'TensorFlow', 'Python', 'PowerBI', 'Machine Learning', 'Deep Learning', 'Data Visualization', 'Data Analysis'],
     },
     {
       id: 2,
-      title: 'AWS Certified Machine Learning - Specialty',
-      issuer: 'Amazon Web Services',
-      date: '2023',
-      credentialId: 'AWS-MLS-2023-002',
-      logo: '🎯',
+      title: 'Data Science Job Simulation',
+      issuer: 'BRITISH AIRWAYS',
+      date: '2024',
+      credentialId: '7p4Zh2mWEhpTz72Po',
+      image: '/public/british.png',
       color: 'from-orange-500 to-red-500',
-      description: 'Comprehensive ML solutions design and implementation on AWS',
-      skills: ['SageMaker', 'AWS ML Services', 'Model Deployment'],
+      description: 'Completion of British Airways Data Science job simulation',
+      skills: ['Python', 'Scikit-learn', 'BeautifulSoup', 'Requests','Pandas', 'NumPy','Matplotlib', 'Seaborn'],
     },
     {
       id: 3,
-      title: 'Deep Learning Specialization',
-      issuer: 'Coursera (Andrew Ng)',
+      title: 'Data Science Job Simulation',
+      issuer: 'Boston Consulting Group (BCG)',
       date: '2022',
-      credentialId: 'DL-SPEC-2022-003',
-      logo: '🧠',
+      credentialId: 'aPNQTFSAqN3STHfRa',
+      image: '/public/BCG.png',
       color: 'from-purple-500 to-pink-500',
       description: 'Comprehensive deep learning and neural network fundamentals',
-      skills: ['Neural Networks', 'CNN', 'RNN', 'Transformers'],
+      skills: ['Python', 'Pandas', 'NumPy', 'scikit-learn', 'Matplotlib', 'Seaborn'],
     },
-    {
+    /*{
       id: 4,
       title: 'Data Science Professional Certificate',
       issuer: 'IBM',
@@ -75,7 +75,7 @@ const Certifications = () => {
       color: 'from-blue-400 to-blue-600',
       description: 'AI solution development using Microsoft Azure services',
       skills: ['Azure ML', 'Cognitive Services', 'Bot Framework'],
-    },
+    },*/
   ];
 
   return (
@@ -108,15 +108,19 @@ const Certifications = () => {
               className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               {/* Header with gradient */}
-              <div className={`h-32 bg-gradient-to-br ${cert.color} relative flex items-center justify-center`}>
-                <motion.span
+              <div className="relative w-full">
+                <motion.div
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
                   transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                  className="text-5xl"
+                  className="w-full"
                 >
-                  {cert.logo}
-                </motion.span>
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-auto object-contain"
+                  />
+                </motion.div>
                 <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm rounded-full p-2">
                   <Award className="h-5 w-5 text-white" />
                 </div>
@@ -196,7 +200,7 @@ const Certifications = () => {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2"
               >
-                15+
+                5+
               </motion.div>
               <p className="text-gray-600 dark:text-gray-400 text-sm">Total Certifications</p>
             </div>
@@ -218,7 +222,7 @@ const Certifications = () => {
                 transition={{ duration: 0.5, delay: 1.0 }}
                 className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2"
               >
-                5
+                2
               </motion.div>
               <p className="text-gray-600 dark:text-gray-400 text-sm">Cloud Platforms</p>
             </div>

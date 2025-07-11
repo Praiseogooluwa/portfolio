@@ -12,47 +12,47 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Senior AI Engineer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Leading a team of 5 engineers to develop cutting-edge AI solutions for enterprise clients. Architected and deployed ML models serving millions of users.',
+      title: 'Data Scientist',
+      company: 'Boston Consulting Group (BCG)',
+      location: 'Remotely',
+      period: '2022 - 2024',
+      description: 'Conducted a customer churn analysis using Python and machine learning (Random Forest, 85% accuracy), delivered actionable insights through visualizations and a summary report for executive decision-making.',
       achievements: [
-        'Increased model accuracy by 25% through innovative ensemble techniques',
-        'Reduced inference time by 40% using model optimization strategies',
-        'Led successful deployment of 15+ production ML models',
+        'Conducted efficient data analysis using Python, including Pandas and NumPy',
+        'Employed data visualization techniques for insightful trend interpretation',
+        'Completed the engineering and optimization of a random forest model, achieving an 85% accuracy rate in predicting customer churn',
       ],
-      technologies: ['Python', 'TensorFlow', 'Kubernetes', 'AWS', 'MLOps'],
+      technologies: ['Python', 'Pandas', 'NumPy', 'scikit-learn', 'Matplotlib', 'Seaborn'],
       color: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
       title: 'Data Scientist',
-      company: 'InnovateLabs',
-      location: 'New York, NY',
-      period: '2020 - 2022',
-      description: 'Developed predictive models and analytics solutions for healthcare and finance sectors. Collaborated with cross-functional teams to drive data-driven decisions.',
+      company: 'British Airways',
+      location: 'Remotely',
+      period: '2024 - 2025',
+      description: 'Completed a data science simulation highlighting its impact on British Airways’ success. Scraped and analyzed customer reviews to uncover key insights and built a predictive model to identify factors influencing customer purchasing behavior.',
       achievements: [
-        'Built fraud detection system reducing false positives by 60%',
-        'Created customer segmentation model increasing revenue by $2M',
-        'Mentored 3 junior data scientists',
+        'Completed a simulation focussing on how data science is a critical component of British Airways success',
+        'Scraped and analysed customer review data to uncover findings',
+        'Built a predictive model to understand factors that influence buying behaviour',
       ],
-      technologies: ['Python', 'Scikit-learn', 'PostgreSQL', 'Tableau', 'Docker'],
+      technologies: ['Python', 'Scikit-learn', 'BeautifulSoup', 'Requests','Pandas', 'NumPy','Matplotlib', 'Seaborn'],
       color: 'from-purple-500 to-pink-500',
     },
     {
       id: 3,
-      title: 'Machine Learning Intern',
-      company: 'StartupXYZ',
-      location: 'Boston, MA',
-      period: '2019 - 2020',
-      description: 'Researched and prototyped computer vision solutions for autonomous systems. Contributed to open-source ML libraries and published research papers.',
+      title: 'Data Scientist',
+      company: 'Hamoye',
+      location: 'Remotely',
+      period: '2023 - 2023',
+      description: 'Developed a Random Forest model to reduce customer attrition, boosting monthly retention by 12 basis points. Collaborated with product and marketing teams to increase service opt-ins by 18%. Built a Python-based recommendation engine that generated $225K in annual revenue and contributed to a prosthesis prototype analysis, saving over $1M in development costs.',
       achievements: [
-        'Developed object detection pipeline with 92% accuracy',
-        'Published 2 papers in top-tier ML conferences',
-        'Contributed to TensorFlow and PyTorch communities',
+        'Built a Random Forest model to predict customer attrition. Improved retention by 12 basis points with feature-based targeting.',
+        'Analyzed prototype data for a prosthesis project. Helped save over $1M in production costs',
+        'Created a Python-based recommendation engine with the product team. Increased user engagement and generated $225K in annual revenue',
       ],
-      technologies: ['Python', 'OpenCV', 'PyTorch', 'Git', 'Jupyter'],
+      technologies: ['Python', 'scikit-learn (Random Forest)', 'Pandas', 'NumPy','Matplotlib', 'Seaborn', 'Plotly', 'Git', 'Jupyter'],
       color: 'from-green-500 to-teal-500',
     },
   ];
@@ -166,15 +166,18 @@ const Experience = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center mt-16"
         >
-          <motion.button
+          <motion.a
+            href="/Bakare_Resume.pdf"
+            download="Isaiah-Full-Resume.pdf"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 flex items-center space-x-2 mx-auto"
+            className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition mx-auto w-max"
           >
             <Calendar className="h-5 w-5" />
             <span>Download Full Resume</span>
-          </motion.button>
+          </motion.a>
         </motion.div>
+
       </div>
     </section>
   );

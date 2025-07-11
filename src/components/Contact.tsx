@@ -98,19 +98,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex@example.com',
-      href: 'mailto:alex@example.com',
+      value: 'praiseogooluwa118@gmail.com',
+      href: 'mailto:praiseogooluwa118@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+234 (0) 704-811-6542',
+      href: 'tel:+2347048116542',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Lagos, Nigeria',
       href: '#',
     },
   ];

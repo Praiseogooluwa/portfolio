@@ -15,13 +15,13 @@ const About = () => {
     { name: 'PyTorch', level: 85, icon: '🔥' },
     { name: 'Scikit-learn', level: 92, icon: '📊' },
     { name: 'SQL', level: 88, icon: '🗄️' },
-    { name: 'React', level: 80, icon: '⚛️' },
+    { name: 'React', level: 70, icon: '⚛️' },
   ];
 
   const stats = [
-    { icon: Code, label: 'Projects Completed', value: '50+' },
-    { icon: Users, label: 'Clients Served', value: '25+' },
-    { icon: Award, label: 'Certifications', value: '15+' },
+    { icon: Code, label: 'Projects Completed', value: '30+' },
+    { icon: Users, label: 'Clients Served', value: '10+' },
+    { icon: Award, label: 'Certifications', value: '3+' },
     { icon: TrendingUp, label: 'Success Rate', value: '98%' },
   ];
 
@@ -56,11 +56,13 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 className="w-full h-full rounded-2xl bg-gradient-to-br from-blue-400 to-purple-500 p-1"
               >
-                <div className="w-full h-full rounded-2xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-8xl">
-                  👨‍💻
-                </div>
+                <img
+                  src="/me.jpg"
+                  alt="My Profile"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </motion.div>
-              
+
               {/* Floating Icons */}
               <motion.div
                 animate={{ rotate: 360 }}
@@ -69,7 +71,7 @@ const About = () => {
               >
                 <Brain className="h-8 w-8 text-white" />
               </motion.div>
-              
+
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
@@ -91,15 +93,15 @@ const About = () => {
             </h3>
             <div className="prose prose-lg text-gray-600 dark:text-gray-400 mb-8">
               <p>
-                With over 5 years of experience in data science and machine learning, I specialize in 
+                With over 2 years of experience in data science and machine learning, I specialize in 
                 developing intelligent systems that transform raw data into actionable insights. My journey 
                 began with a fascination for patterns in data and has evolved into building production-ready 
                 AI solutions.
               </p>
               <p>
-                I've worked across various industries including healthcare, finance, and e-commerce, 
-                helping organizations leverage the power of artificial intelligence to drive innovation 
-                and business growth.
+                I've built and contributed to a range of AI and data science projects , from recommendation systems and predictive analytics to automation tools and AI-powered assistants. 
+                My work, showcased on GitHub, reflects a strong focus on solving real-world problems using machine learning, data analysis, and backend development. 
+                I'm passionate about turning ideas into smart, scalable solutions that create real impact.
               </p>
             </div>
 

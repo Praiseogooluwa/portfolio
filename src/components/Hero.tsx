@@ -17,8 +17,8 @@ const Hero = () => {
   };
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-white' },
-    { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:text-blue-600' },
+    { icon: Github, href: 'https://github.com/Praiseogooluwa', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-white' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/praise-ogooluwa', label: 'LinkedIn', color: 'hover:text-blue-600' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:text-cyan-400' },
   ];
 
@@ -35,7 +35,8 @@ const Hero = () => {
     })
   };
 
-  const nameText = "Alex Johnson";
+  const nameText = "Isaiah Ogooluwa Bakare";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900">
@@ -71,10 +72,10 @@ const Hero = () => {
         >
           {/* Animated name with individual letter animations */}
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 relative"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold pb-6 mb-6 relative"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
           >
             <div className="relative inline-block">
               {nameText.split('').map((letter, i) => (
@@ -185,8 +186,18 @@ const Hero = () => {
                 className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 whileHover={{ scale: 1.1 }}
               />
-              <Download className="h-5 w-5 relative z-10" />
-              <span className="relative z-10">Download Resume</span>
+              <motion.a
+                href="/Bakare_Resume.pdf"
+                download="Isaiah-Bakare-Resume.pdf"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center text-white rounded-full font-semibold hover:bg-blue-700 transition mx-auto"
+              >
+                <Download className="h-5 w-5 z-10" />
+                <span className="z-10">Download Resume</span>
+              </motion.a>
+
+
               
               {/* Floating particles on hover */}
               <motion.div
