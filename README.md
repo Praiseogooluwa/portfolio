@@ -9,9 +9,10 @@
 ### 1. Clone and Run Locally
 
 ``bash
+
 git clone [https://github.com/Praiseogooluwa/portfolio]
 
-cd <portfolio>
+cd portfolio
 
 npm install
 
