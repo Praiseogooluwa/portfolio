@@ -9,20 +9,24 @@
 ### 1. Clone and Run Locally
 
 ``bash
-git clone https://github.com/Praiseogooluwa/portfolio
-cd <PROJECT_NAME>
+git clone [https://github.com/Praiseogooluwa/portfolio]
+
+cd <portfolio>
+
 npm install
+
 npm run dev
+
 ✅ Make sure Node.js and npm are installed. Install with nvm.
 
-2. Edit on GitHub
+### 2. Edit on GitHub
 Navigate to any file.
 
 Click the ✏️ Edit button.
 
 Commit your changes.
 
-3. Use GitHub Codespaces (Optional)
+### 3. Use GitHub Codespaces (Optional)
 Go to your repo.
 
 Click the green Code button.
@@ -31,7 +35,7 @@ Select Codespaces > New codespace.
 
 Start editing and push your updates.
 
-🧱 Tech Stack
+### 🧱 Tech Stack
 This project uses:
 
 ⚡ Vite
@@ -44,7 +48,7 @@ This project uses:
 
 🎨 shadcn/ui
 
-🚀 Deployment
+### 🚀 Deployment
 You can deploy this project on:
 
 Vercel
@@ -53,7 +57,7 @@ Netlify
 
 GitHub Pages (with some setup)
 
-🔗 Custom Domain
+### 🔗 Custom Domain
 To connect a custom domain:
 
 Go to your hosting provider’s dashboard.
@@ -62,8 +66,8 @@ Add your domain to the project.
 
 Update DNS settings with your registrar.
 
-📌 License
+### 📌 License
 This project is licensed under my terms. 
 
-🙌 Author
-Your Name — @Praiseogooluwa
+### 🙌 Author
+Isaiah Praise Ogooluwa Bakare
