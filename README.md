@@ -2,7 +2,7 @@
 
 ## 🌐 Live URL
 
-**Visit here**: [https://yourdomain.dev/projects/59bb7414-4bed-4443-a520-79a324383287](https://yourdomain.dev/projects/59bb7414-4bed-4443-a520-79a324383287)
+**Visit here**: [https://praiseogooluwa.vercel.app](https://praiseogooluwa.vercel.app)
 
 ## 🛠 How to Edit This Project
 
